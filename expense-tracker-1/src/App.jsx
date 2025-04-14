@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
 import ExpenseForm from './components/ExpenseForm'
+import ExpenseTable from './components/ExpenseTable'
 import SearchBar from './components/SearchBar'
 import SortButton from './components/SortButton'
 
