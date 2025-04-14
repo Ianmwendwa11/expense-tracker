@@ -12,6 +12,7 @@ function App() {
     { name: 'Bank Repayment', category: 'Bills', description: 'Power tokens', amount: 100 },
   ])
 
+
   const handleDelete = (idToDelete) => {
     setExpenses(expenses.filter(expense => expense.id !== idToDelete));
   };
@@ -26,5 +27,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App
