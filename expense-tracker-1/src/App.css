@@ -1,42 +1,173 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+.App {
   text-align: center;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f4f4f9, #f8f8ff);
+  min-height: 100vh;
+  color: #333;
+  animation: fadeIn 1s ease-in;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+h1 {
+  background: linear-gradient(to right, #643fa0, #7d5cd1);
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.form-container {
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-.card {
-  padding: 2em;
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.read-the-docs {
-  color: #888;
+label {
+  text-align: left;
+  font-size: 15px;
+  color: #444;
+  font-weight: 500;
+}
+
+input {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  background-color: #fdfdfd;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7d5cd1;
+  box-shadow: 0 0 5px rgba(125, 92, 209, 0.3);
+}
+
+
+button {
+  padding: 12px;
+  background: linear-gradient(to right, #6b3fa0, #8e62d4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(107, 63, 160, 0.3);
+}
+
+
+.delete-button {
+  background-color: #ff5e5e;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #d63031;
+  transform: scale(1.05);
+}
+
+
+.search-container {
+  margin: 30px auto;
+  width: 240px;
+  position: relative;
+  animation: fadeIn 1.3s ease-in;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: url('https://img.icons8.com/ios-filled/16/000000/search.png') no-repeat 10px center white;
+  background-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+.table-container {
+  margin-top: 40px;
+  overflow-x: auto;
+  animation: fadeIn 1.4s ease-in;
+}
+
+table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #eee;
+  text-align: left;
+  font-size: 14.5px;
+}
+
+th {
+  background: linear-gradient(to right, #643fa0, #7d5cd1);
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f8fc;
+}
+
+tr:hover {
+  background-color: #f0ecfa;
+  transition: 0.2s ease;
+}
+
+
+.sort-container {
+  margin: 25px auto;
+  animation: fadeIn 1.5s ease-in;
+}
+
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
