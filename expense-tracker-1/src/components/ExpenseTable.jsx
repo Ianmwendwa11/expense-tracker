@@ -13,8 +13,8 @@ function ExpenseTable({ filteredExpenses = [], handleDelete }) {
           </tr>
         </thead>
         <tbody>
-  {filteredExpenses.length > 0 ? (
-   {filteredExpenses.map((item) => (
+        {filteredExpenses.length > 0 ? (
+  filteredExpenses.map((item) => (
     <tr key={item.id}>
       <td>{item.description}</td>
       <td>{item.category}</td>
@@ -23,15 +23,13 @@ function ExpenseTable({ filteredExpenses = [], handleDelete }) {
         <button onClick={() => handleDelete(item.id)}>Delete</button>
       </td>
     </tr>
-  ))}
-  
-  ) : (
-    <tr>
-      <td colSpan="4" style={{ textAlign: "center", padding: "10px" }}>
-        No expenses found.
-      </td>
-    </tr>
-  )}
+  ))
+) : (
+  <tr>
+    <td colSpan="4">No expenses found</td> 
+  </tr>
+)}
+
 </tbody>
 
       </table>
