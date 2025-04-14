@@ -11,10 +11,11 @@ function App() {
     { name: 'Bank Repayment', category: 'Bills', description: 'Power tokens', amount: 100 },
   ])
 
-  const handleDelete = (indexToDelete) => {
-    setExpenses(expenses.filter((_, index) => index !== indexToDelete))
-  }
-
+  const handleDelete = (id) => {
+    setExpenses(expenses.filter((expense) => expense.id !== id));
+  };
+  
+  
   return (
     <div className="App">
       <h1>Expense Tracker</h1>
