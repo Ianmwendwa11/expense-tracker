@@ -8,5 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
