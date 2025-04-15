@@ -5,6 +5,7 @@ import ExpenseTable from './components/ExpenseTable'
 import SearchBar from './components/SearchBar'
 import SortButton from './components/SortButton'
 
+
 function App() {
   const [expenses, setExpenses] = useState([
     { name: 'Lunch', category: 'Food', description: 'Weekly Lunch', amount: 20 },
